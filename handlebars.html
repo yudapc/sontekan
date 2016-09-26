@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="id">
 <head>
+  <title>Handlebars</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
@@ -36,18 +37,18 @@
 </head>
 <body>
 
-<script id="example-template" type="text/x-handlebars-template">
+  <script id="example-template" type="text/x-handlebars-template">
 
-  <!-- people is looked up on the global context, the one we pass to the compiled template -->
+    <!-- people is looked up on the global context, the one we pass to the compiled template -->
 
-  {{#each people}}
+    {{#each people}}
 
-    <!-- Here the context is each individual person. So we can access its properties directly: -->
-    <p>{{firstName}} {{lastName}}</p>
+      <!-- Here the context is each individual person. So we can access its properties directly: -->
+      <p>{{firstName}} {{lastName}}</p>
 
-  {{/each}}
+    {{/each}}
 
-</script>
+  </script>
 
 </body>
 </html>
