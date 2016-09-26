@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $.ajax({
+        url: 'http://ill.cogati.com/api/articles?limit=2&page=1',
+        type: 'GET',
+        crossDomain: true,
+        success: function(data) {
+          var theTemplateScript = $("#example-template").html();
+          var theTemplate = Handlebars.compile(theTemplateScript);
+          var context = {articles: data};
+          var theCompiledHtml = theTemplate(context);
+          $(document.body).append(theCompiledHtml);
+        }
+      });
+
+    });
+  </script>
+</head>
+<body>
+  <script id="example-template" type="text/x-handlebars-template">
+    {{#each articles}}
+      <h1>
+        <a href="http://ill.cogati.com/api/articles/show/{{id}}">
+          {{title}}
+        </a>
+      <h3>{{subtitle}}</h3>
+      <p>{{description}}</p>
+      <hr/>
+    {{/each}}
+  </script>
+</body>
+</html>
