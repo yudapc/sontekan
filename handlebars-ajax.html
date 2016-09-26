@@ -9,7 +9,7 @@
 
     $(document).ready(function () {
       $.ajax({
-        url: 'http://ill.cogati.com/api/articles?limit=2&page=1',
+        url: 'http://ill.cogati.com/api/articles?limit=5&page=1',
         type: 'GET',
         crossDomain: true,
         success: function(data) {
@@ -33,6 +33,9 @@
         </a>
       <h3>{{subtitle}}</h3>
       <p>{{description}}</p>
+      <a href="http://ill.cogati.com/api/articles/show/{{id}}">
+        Read more...
+      </a>
       <hr/>
     {{/each}}
   </script>
