@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script type="text/javascript">
+
+    $(function () {
+      // Grab the template script
+      var theTemplateScript = $("#example-template").html();
+
+      // Compile the template
+      var theTemplate = Handlebars.compile(theTemplateScript);
+
+      // This is the default context, which is passed to the template
+      var context = {
+        people: [
+          { firstName: 'Homer', lastName: 'Simpson' },
+          { firstName: 'Peter', lastName: 'Griffin' },
+          { firstName: 'Eric', lastName: 'Cartman' },
+          { firstName: 'Kenny', lastName: 'McCormick' },
+          { firstName: 'Bart', lastName: 'Simpson' }
+        ]
+      };
+
+      // Pass our data to the template
+      var theCompiledHtml = theTemplate(context);
+
+      // Add the compiled html to the page
+      $(document.body).append(theCompiledHtml);
+    });
+
+  </script>
+</head>
+<body>
+
+<script id="example-template" type="text/x-handlebars-template">
+
+  <!-- people is looked up on the global context, the one we pass to the compiled template -->
+
+  {{#each people}}
+
+    <!-- Here the context is each individual person. So we can access its properties directly: -->
+    <p>{{firstName}} {{lastName}}</p>
+
+  {{/each}}
+
+</script>
+
+</body>
+</html>
