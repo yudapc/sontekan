@@ -1,0 +1,37 @@
+Interview
+
+1. Perkenalan
+2. Jelaskan kelebihan & kekurangan
+3. Sekarang menggunakan bahasa pemrograman apa?
+4. Yang paling mahir di bahasa pemrograman apa?
+5. Tes logika. Jika ada 2 lantai dan ada 3 buah lampu pada lantai
+   pertama, sedangkan saklar ada pada lantai ke 2.
+   Berapa kali perjalanan (naik turun tangga) untuk mengetahui saklar 1, 2, 3 untuk ke tiga lampu tersebut.
+
+6. Buatkan Program Fibonaci (15 kali)
+7. Buatkan program dengan tampilan:
+    *
+    **
+    ***
+    ****
+    *****
+8. Buat Program Fizz Buzz 1-30.
+    Kelipatan 3 --> Fizz
+    Kelipatan 5 --> Buzz
+    Kelipatan 3 dan 5 --> FizzBuzz
+9. Ada bilangan:
+    60, 30, 32, 16, 18, 9, x, y
+    Berapakah nilai x & y?
+    Jawaban:
+    Pola dari bilangan tersebut adalah n:2, n+2, n:2, n+2, n:2, n+2
+    Berarti x = 11 dan y = 5,5
+
+10.Pengetahuan:
+    - Optimize Application
+    - Micro services vs monolithic
+    - Contoh Kode yang couple & decouple (mana yang lebih baik?)
+    - Konsep Queue
+    - Query Eager Load
+    - TDD
+    - Javascript asynchronous, jelaskan contohnya dan bagaimana bila diperlukan proses yang serial
+    - Javascript callbackhell, bagaimana solusinya
