@@ -35,3 +35,46 @@ Interview
     - TDD
     - Javascript asynchronous, jelaskan contohnya dan bagaimana bila diperlukan proses yang serial
     - Javascript callbackhell, bagaimana solusinya
+
+
+tim interaksi
+- Lebih senang kerja sendirian atau tim?
+- Tim struktur? berapa banyak developer dalam 1 tim? pembagian kerja?
+- makai agile methodology untuk project management? kanban, scrum dll?
+- bagaimana assign kerjaan? di assign team leader? inisiatif?
+- bagaiamana membuat estimasi waktu kerjaan?
+- single product atau kerja di project lain jg?
+- bagaimana kamu gambarin rekan kerja baik dan buruk?
+- pernah ga sih ke block kerjaan karena orang lain? bagaimana hadapin?
+
+development proses
+- biasanya version control makai apa?
+- in-house (gitlab, github enterprise) atau third party service?
+- git workflow? pull request atau central repo? branching method? git-flow, github-flow, enviroment merging atau custom?
+- ticket sistem atau hanya koordinasi team?
+- code review?
+- code style? PSR? standar js?
+- development enviroment? virtual machine? antar tim dev env gmn? vagrant? puppet atau chef?
+- nentuin relese schedule?
+- bagaimana proses test selesai? trus gmn? coordinasi env test dan dev? decision relese?
+
+Arsitekture
+- make automtion test? tools? testing methodology gmn? BDD TDD? coverage skarang?
+- purecss atau compiled middleware(less, sass)?
+- build proses? automated? continues integration?
+- mvc? code structure?
+
+Javascript
+- frontend stack? jquery? underscore or lodash? angular react ember? knpa memilih itu?
+- maka templating engine? ejs, jade, handlebars?
+- gunain compiled language? coffescript? typescript?
+- nodejs?
+
+
+algoritma
+- misal punya data 1000, nah gmn kamu nampilin di FrontEnd? export as csv atau excell biar ga bebanin server?
+- misal buat aplikasi offline terkoneksi kadang2? bagaimana mastiin data local sama dengan server? misal di local ada operasi add, delete, update trus di sync ke server? dan aplikasi multiple device?
+
+- 1000 data dan didalamnya ada kalkulasi perhitungan, bagaimana cara yang efektifnya terutama di rails.
+- Bagaimana query transaction di rails bila menggunakan active record
+
